@@ -87,6 +87,9 @@ nav a#openup {
     width: 100%;
     position: relative;
   }
+  .hide-on-small {
+    display: none;
+  }
 }
 .cf:before,
 .cf:after {
