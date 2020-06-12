@@ -5,104 +5,62 @@
   font-style: normal;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  background-color: #252529;
-  margin: 0;
-  color: #fff;
-  line-height: 1.6;
+:root {
+  --main-bg-color: #252529;
+  --main-txt-color: #fff;
+  --main-font-family: "PT Sans", sans-serif;
+  --header-bg-color: #333;
+  --header-txt-color: #eee;
 }
 
-nav {
-  height: 40px;
-  width: 100%;
-  background-color: #333;
-  color: #eee;
-  position: fixed;
-}
-nav ul {
-  padding: 0;
+body {
+  font-family: var(--main-font-family);
+  background-color: var(--main-bg-color);
   margin: 0;
+  color: var(--main-txt-color);
 }
-nav li {
-  display: inline;
-  float: left;
+
+.header-nav a {
+  color: var(--header-txt-color);
 }
-nav a {
-  display: inline-block;
-  width: 100px;
-  text-align: center;
+
+.header-nav {
+  background-color: var(--header-bg-color);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.header-nav li a {
   text-decoration: none;
-  padding: 10px 0;
-  color: #eee;
+  display: block;
+  padding: 20px;
+  border-right: 1px solid #f4f4f4;
+  font-size: calc(11px + 0.8vw);
 }
-nav li:hover {
+
+.header-nav li a:hover {
   background-color: #444;
 }
-nav a#openup {
-  display: none;
+
+.header-nav .logo {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: calc(16px + 0.8vw);
+  display: block;
+  float: left;
 }
 
-@media screen and (max-width: 580px) {
-  nav {
-    height: auto;
-    border-bottom: 0;
-  }
-  nav ul {
-    display: none;
-    height: auto;
-  }
-  nav li {
-    width: 100%;
-    float: left;
-    position: relative;
-  }
-  nav a {
-    text-align: left;
-    width: 100%;
-    text-indent: 25px;
-    background: #333;
-    border-bottom: 1px solid #555;
-  }
-  nav a:hover {
-    background: #444;
-  }
-  nav a#openup:after {
-    content: "|||";
-    transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-90deg);
-    /* Safari and Chrome */
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 5px;
-    top: 20px;
-  }
-  nav a#openup {
-    display: block;
-    background-color: #333;
-    width: 100%;
-    position: relative;
-  }
-  .hide-on-small {
-    display: none;
-  }
-}
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
-}
-
-.cf:after {
+.header-nav .menu {
   clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
-
-.cf {
-  zoom: 1;
-}
-
-/* For IE 6/7 (trigger hasLayout) */

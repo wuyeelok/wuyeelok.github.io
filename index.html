@@ -7,7 +7,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link href="./css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
 
     <link rel="stylesheet" href="./css/app.css" />
 
@@ -17,26 +19,19 @@
   <body>
     <!-- Showcase & Nav -->
     <div id="showcase">
-      <header>
-        <nav class="cf">
-          <ul class="cf">
-            <li class="hide-on-small">
-              <a href="#showcase">My Website</a>
-            </li>
-            <li>
-              <a href="#about">About Me</a>
-            </li>
-            <li>
-              <a href="#project">Projects</a>
-            </li>
-            <li>
-              <a href="#hobby">Hobbies</a>
-            </li>
-            <li>
-              <a href="#contact">Contact Me</a>
-            </li>
+      <header class="header">
+        <nav class="header-nav">
+          <a href="#showcase" class="logo">My Website</a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="navicon"></span
+          ></label>
+          <ul class="menu">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#hobby">Hobbies</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
-          <a href="#" id="openup">My Website</a>
         </nav>
       </header>
     </div>
