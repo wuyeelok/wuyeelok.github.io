@@ -4,7 +4,14 @@ ul.menu {
   padding: 0;
 }
 
-ul.menu a {
+ul.menu li a {
+  text-decoration: none;
+  color: black;
+
+  display: block;
+}
+
+.logo {
   text-decoration: none;
   color: black;
 }
