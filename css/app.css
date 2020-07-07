@@ -2,6 +2,8 @@ ul.menu {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  background-color: rgb(219, 216, 216);
 }
 
 ul.menu li a {
@@ -9,6 +11,13 @@ ul.menu li a {
   color: black;
 
   display: block;
+
+  padding: 9px 17px;
+}
+
+ul.menu li a:hover {
+  background-color: #666;
+  color: whitesmoke;
 }
 
 .logo {
