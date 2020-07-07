@@ -6,6 +6,10 @@ ul.menu {
   background-color: rgb(219, 216, 216);
 }
 
+ul.menu li {
+  text-align: center;
+}
+
 ul.menu li a {
   text-decoration: none;
   color: black;
