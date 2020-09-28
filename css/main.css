@@ -109,11 +109,20 @@ section {
   position: relative;
   transform: scale(0.85);
   transition: transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .featured .featured__item:focus,
 .featured .featured__item:hover {
   transform: scale(1);
+}
+
+.featured .featured__item:focus .featured__details,
+.featured .featured__item:hover .featured__details {
+  opacity: 1;
 }
 
 .featured .featured__item::after {
@@ -125,4 +134,15 @@ section {
   border-radius: 50%;
   background: #2193b0;
   z-index: -1;
+}
+
+.featured .featured__details {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.featured .featured__details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
