@@ -99,3 +99,19 @@ section {
     background-position: center center;
   }
 }
+
+.featured {
+  background: #eee;
+}
+
+.featured .featured__item {
+  display: block;
+  position: relative;
+  transform: scale(0.85);
+  transition: transform 250ms ease-in-out;
+}
+
+.featured .featured__item:focus,
+.featured .featured__item:hover {
+  transform: scale(1);
+}
