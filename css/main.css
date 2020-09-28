@@ -34,7 +34,7 @@ section {
 
 .split {
   display: flex;
-  gap: 2em;
+  gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -123,6 +123,7 @@ section {
 .featured .featured__item:focus .featured__details,
 .featured .featured__item:hover .featured__details {
   opacity: 1;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
 .featured .featured__item::after {
