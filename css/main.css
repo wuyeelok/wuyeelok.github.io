@@ -166,6 +166,10 @@ section {
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 
+.hero {
+  --clr-accent: #faa700;
+}
+
 .shoe-red {
   --clr-inner: #faa700;
   --clr-outer: #e48d00;
