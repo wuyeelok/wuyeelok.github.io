@@ -156,4 +156,12 @@ section {
   padding: 3em;
   border-radius: 1em;
   margin-bottom: 3em;
+  text-align: center;
+}
+
+.product .product__title {
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
