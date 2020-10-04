@@ -147,3 +147,13 @@ section {
   font-weight: 700;
   font-size: 2.5rem;
 }
+
+.product {
+  background: radial-gradient(
+    var(--clr-inner, limegreen),
+    var(--clr-outer, purple)
+  );
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 3em;
+}
