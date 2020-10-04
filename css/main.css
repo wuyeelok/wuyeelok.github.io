@@ -167,19 +167,19 @@ section {
 }
 
 .shoe-red {
-  --clr-inner: red;
-  --clr-outer: orange;
-  --clr-accent: limegreen;
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
 }
 
 .shoe-white {
-  --clr-inner: red;
-  --clr-outer: orange;
-  --clr-accent: limegreen;
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
 }
 
 .shoe-blue {
-  --clr-inner: red;
-  --clr-outer: orange;
-  --clr-accent: limegreen;
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
 }
