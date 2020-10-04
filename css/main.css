@@ -161,7 +161,8 @@ section {
 
 .product .product__title {
   font-size: 4rem;
-  line-height: 1.1;
+  text-transform: uppercase;
+  line-height: 1;
   color: #fff;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
@@ -171,9 +172,15 @@ section {
 }
 
 @media (min-width: 45em) {
+  .product {
+    text-align: left;
+  }
+
   .product .product__image {
     float: right;
-    width: 50%;
+    width: 65%;
+    shape-outside: url(../img/shoe-1.png);
+    shape-margin: 1em;
   }
 }
 
