@@ -168,6 +168,18 @@ section {
 
 .shoe-red {
   --clr-inner: red;
-  --clr-outter: orange;
+  --clr-outer: orange;
+  --clr-accent: limegreen;
+}
+
+.shoe-white {
+  --clr-inner: red;
+  --clr-outer: orange;
+  --clr-accent: limegreen;
+}
+
+.shoe-blue {
+  --clr-inner: red;
+  --clr-outer: orange;
   --clr-accent: limegreen;
 }
