@@ -166,6 +166,10 @@ section {
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 
+.product .product__image {
+  margin: -5em 0 0 0;
+}
+
 .hero {
   --clr-accent: #faa700;
 }
