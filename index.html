@@ -3,13 +3,312 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenneth WU Personal Site</title>
 
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
+    <!-- Showcase & Nav -->
+    <div id="showcase">
+      <header>
+        <nav class="cf">
+          <ul class="cf">
+            <li>
+              <a href="#showcase">Overview</a>
+            </li>
+            <li>
+              <a href="#about_me">About Me</a>
+            </li>
+            <li>
+              <a href="#project">Projects</a>
+            </li>
+            <li>
+              <a href="#skills_tools">Skills & Tools</a>
+            </li>
+            <li>
+              <a href="#interests">Interests</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Me</a>
+            </li>
+          </ul>
+          <a href="#" id="openup">Kenneth's Personal Site</a>
+        </nav>
+      </header>
+      <div class="section-main container">
+        <svg class="hero-svg" viewBox="0 0 280 80">
+          <g class="svg-main">
+            <title>Kenneth WU</title>
+            <ellipse cx="140" cy="40" rx="130" ry="32" />
+            <text x="140" y="50">Kenneth WU</text>
+          </g>
+        </svg>
+        <h1>Systems Analyst</h1>
+        <p>
+          <span class="hide-on-small">Curretly working </span>in
+          <b>Hong Kong</b>
+        </p>
+        <p class="lead hide-on-small">Full time employment since 2014</p>
+        <p class="hide-on-small">
+          Have taken <b>3 doses</b> of COVID-19 vaccines
+        </p>
+        <p class="main__vac-brief">
+          COVID-19 vaccines dose taken: <i class="fa-solid fa-syringe"></i
+          ><i class="fa-solid fa-syringe"></i
+          ><i class="fa-solid fa-syringe"></i>
+        </p>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about_me" class="section">
+      <div class="container">
+        <h2 class="section-head">
+          <i class="fas fa-info-circle"></i> About Me
+        </h2>
+        <p class="lead">
+          Since graduated in University in 2014, I had been working in several
+          software company which involved in web application development
+          projects with government, banks and other commercial company.
+        </p>
+        <a href="#project" class="btn btn-primary mb internal-link">Projects</a>
+        <p class="text-light">
+          I have participated in both frontend and backend development.
+        </p>
+        <img src="img/mac_laptop_in_dark.jpg" alt="Mac laptop opening" />
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="section bg-light">
+      <div class="container">
+        <h2 class="section-head"><i class="fas fa-briefcase"></i> Projects</h2>
+        <p class="lead">Some of the projects that I had involved:</p>
+        <div class="project-container">
+          <a
+            href="https://www.gov.hk/"
+            target="_blank"
+            title="GovHK — One-Stop Portal of the Hong Kong Special Administrative Region Government"
+            class="project-item"
+            ><img
+              src="img/govhk_logo_main.svg"
+              alt="GovHK Logo"
+              class="project-img"
+            />
+            <p class="project-details">
+              Web content management of the GovHK Portal using TeamSite and
+              enhance its online services using Spring, Hibernate, etc.
+            </p></a
+          >
+
+          <a
+            href="https://www.dahsing.com/"
+            target="_blank"
+            title="Dah Sing Bank, Limited"
+            class="project-item"
+            ><img
+              src="img/dsb_logo.svg"
+              alt="Dah Sing Bank Logo"
+              class="project-img"
+            />
+            <p class="project-details">
+              Development of the Dahsing bank online credit card & loan
+              application form using Adobe Experience Manager Forms, Maven, etc.
+            </p></a
+          >
+
+          <a
+            href="https://e-learning.housingauthority.gov.hk/HAELP/HAeL/"
+            target="_blank"
+            title="HA e-learning Portal"
+            class="project-item"
+            ><img
+              src="img/haelp_logo.png"
+              alt="HA e-learning Portal Logo"
+              class="project-img"
+            />
+            <p class="project-details">
+              Redevelopment of Housing Authority e-Learning Portal (which Civil
+              Service College e-Learning Portal are based on) using jQuery,
+              Spring, MyBatis, etc.
+            </p></a
+          >
+
+          <a
+            href="https://www.lifung.com/suppliers/services-for-suppliers/"
+            target="_blank"
+            title="Services for suppliers - Li & Fung"
+            class="project-item"
+            ><img
+              src="img/lf_logo.svg"
+              alt="Li & Fung Logo"
+              class="project-img"
+            />
+            <p class="project-details">
+              Using Apache Struts and iReport for maintenance of Li & Fung's
+              vendor web portal, called total sourcing, which manages resources
+              with suppliers including shipping, packaging, ordering, etc.
+            </p></a
+          >
+
+          <a
+            href="https://github.com/wuyeelok/"
+            target="_blank"
+            title="Personal Project in GitHub"
+            class="project-item"
+            ><img
+              src="img/GitHub_Logo.png"
+              alt="GitHub Logo"
+              class="project-img"
+            />
+            <p class="project-details">
+              Personal project for reaarch and hobbies. Currently focusing on
+              SCSS, Reponsive Web Design and Spring Boot.
+            </p></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills_tools" class="section">
+      <div class="container">
+        <h2 class="section-head">
+          <i class="fas fa-tools"></i> Skills & Tools
+        </h2>
+        <p class="lead">
+          Some of skills & tools that I had used during employment:
+        </p>
+
+        <div class="skills-tools-cols">
+          <ul class="chosen">
+            <li>
+              <i class="skill_icon fas fa-plus cursor-pointer"></i> Operating
+              Systems:
+            </li>
+            <li>Windows (10, 7, Vista, XP)</li>
+            <li>Linux (Ubuntu, CentOS)</li>
+            <li>Mac (Catalina, Mojave)</li>
+          </ul>
+
+          <ul>
+            <li>
+              <i class="skill_icon fas fa-minus cursor-pointer"></i> Programming
+              Languages:
+            </li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+          </ul>
+
+          <ul>
+            <li>
+              <i class="skill_icon fas fa-minus cursor-pointer"></i> Web Dev
+              Lang./Framework:
+            </li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript/ES6</li>
+            <li>Spring/Spring Boot</li>
+            <li>Hibernate</li>
+            <li>JSP</li>
+            <li>Thymeleaf</li>
+            <li>MyBatis</li>
+            <li>Apache Struts</li>
+          </ul>
+
+          <ul>
+            <li>
+              <i class="skill_icon fas fa-minus cursor-pointer"></i> Database:
+            </li>
+            <li>MySQL</li>
+            <li>MS SQL</li>
+            <li>Oracle</li>
+            <li>IBM Db2</li>
+          </ul>
+
+          <ul>
+            <li>
+              <i class="skill_icon fas fa-minus cursor-pointer"></i> Others:
+            </li>
+            <li>GitBash</li>
+            <li>TortoiseSVN</li>
+            <li>SourceTree</li>
+            <li>JIRA</li>
+            <li>RALLY</li>
+            <li>VS Code</li>
+            <li>Eclipse</li>
+            <li>Jasper iReport</li>
+            <li>AEM</li>
+            <li>OpenText TeamSite</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section bg-light">
+      <div class="container">
+        <h2 class="section-head"><i class="fas fa-swimmer"></i> Interests</h2>
+        <p class="lead">My personal interests include:</p>
+        <ul>
+          <li>
+            <b>Swimming.</b> I have participated in Greater China area swimming
+            competition thoughout the year.
+          </li>
+          <li>
+            <b>Running.</b> I am an active runner since I was a kid. I had
+            joinned athletic and cross country team in high school and
+            university.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-head"><i class="fas fa-envelope"></i> Contact Me</h2>
+
+        <p>
+          <a href="mailto:wuyeelok@gmail.com"
+            ><i class="fas fa-at"></i> Email: wuyeelok@gmail.com</a
+          >
+        </p>
+        <p id="para__wechat-id" class="hide-ele">
+          <a href="https://web.wechat.com/" target="_blank"
+            ><i class="fa-brands fa-weixin"></i> WeChat ID: x0x_8_LoL</a
+          ><span class="hide-on-small">
+            <br />
+            <img
+              class="qr-img"
+              src="./img/wechat_add_qr.png"
+              alt="Kenneth WeChat Add QR Code"
+            />
+          </span>
+        </p>
+        <p id="para__wechat-qr" class="hide-ele">
+          <i class="fa-brands fa-weixin"></i> WeChat:<br />
+          <img
+            class="qr-img"
+            src="./img/wechat_add_qr.png"
+            alt="Kenneth WeChat Add QR Code"
+          />
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bottom text-center">
+        <i class="fas fa-star"></i>Kenneth WU Personal Site<i
+          class="fas fa-star"
+        ></i>
+      </div>
+    </footer>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
