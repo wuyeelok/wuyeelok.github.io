@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 *,
 *::before,
 *::after {
@@ -13,6 +15,10 @@
 img,
 picture,
 svg {
-  display: block;
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: clr("neutral", 300);
 }
