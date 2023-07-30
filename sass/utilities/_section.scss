@@ -3,9 +3,9 @@
 /* Section */
 .section {
   padding: 2rem 0;
-}
 
-.section-head {
-  font-size: fs(700);
-  margin: 1rem 0 0 0;
+  &-head {
+    font-size: fs(700);
+    margin: 1rem 0 0 0;
+  }
 }
