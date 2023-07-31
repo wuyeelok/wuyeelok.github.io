@@ -1,0 +1,30 @@
+/* Showcase */
+#showcase {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/showcase_keyboard_big.jpg"),
+    radial-gradient(rgb(201, 193, 193), #111);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: clamp(36rem, 90vh, 55rem);
+  position: relative;
+  overflow-y: hidden;
+}
+
+#showcase .container {
+  margin-top: 20vh;
+}
+
+#showcase h1 {
+  font-size: calc(1rem + 0.8vw);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#showcase h2 {
+  font-size: 2rem;
+}
