@@ -2,15 +2,25 @@
 
 /* Navigation */
 nav {
-  height: 40px;
+  height: 45px;
   width: 100%;
   background-color: clr("neutral", 700);
   color: clr("neutral", 200);
   position: fixed;
 
+  @include maxq("medium") {
+    height: auto;
+    border-bottom: 0;
+  }
+
   & ul {
     padding: 0;
     margin: 0;
+
+    @include maxq("medium") {
+      display: none;
+      height: auto;
+    }
   }
 
   & li {
@@ -19,6 +29,11 @@ nav {
 
     &:hover {
       background-color: clr("neutral", 400);
+    }
+
+    @include maxq("medium") {
+      width: 100%;
+      position: relative;
     }
   }
 
@@ -33,6 +48,51 @@ nav {
 
     &#openup {
       display: none;
+
+      @include maxq("medium") {
+        display: block;
+        background-color: clr("neutral", 700);
+        width: 100%;
+        position: relative;
+
+        &::after {
+          content: "|||";
+          transform: rotate(-90deg);
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          position: absolute;
+          right: 10px;
+          top: 30px;
+        }
+      }
+    }
+
+    @include maxq("medium") {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+      background: clr("neutral", 700);
+      border-bottom: 1px solid #555;
+
+      &:hover {
+        background: #444;
+      }
     }
   }
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+  z-index: 100;
 }
