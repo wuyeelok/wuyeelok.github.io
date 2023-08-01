@@ -1,31 +1,38 @@
+@use "../abstracts/" as *;
+
 /* Navigation */
 nav {
   height: 40px;
   width: 100%;
-  background-color: #333;
-  color: #eee;
+  background-color: clr("neutral", 700);
+  color: clr("neutral", 200);
   position: fixed;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav li {
-  display: inline;
-  float: left;
-}
-nav a {
-  display: inline-block;
-  width: 110px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 0;
-  color: #eee;
-  text-decoration: none;
-}
-nav li:hover {
-  background-color: #444;
-}
-nav a#openup {
-  display: none;
+
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  & li {
+    display: inline;
+    float: left;
+
+    &:hover {
+      background-color: clr("neutral", 400);
+    }
+  }
+
+  & a {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+
+    &#openup {
+      display: none;
+    }
+  }
 }
