@@ -31,4 +31,12 @@
   & h2 {
     font-size: 2rem;
   }
+
+  .main__vac-brief {
+    display: none;
+
+    @include maxq("medium") {
+      display: block;
+    }
+  }
 }

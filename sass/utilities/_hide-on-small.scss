@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+@include maxq("medium") {
+  .hide-on-small {
+    display: none;
+  }
+}
