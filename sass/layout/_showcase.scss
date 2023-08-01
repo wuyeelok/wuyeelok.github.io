@@ -16,8 +16,18 @@
   position: relative;
   overflow-y: hidden;
 
+  @include maxq("medium") {
+    height: clamp(25rem, 55vh, 55rem);
+    background-image: url("../img/showcase_keyboard_small.jpg"),
+      radial-gradient(rgb(201, 193, 193), #111);
+  }
+
   & .container {
     margin-top: 20vh;
+
+    @include maxq("medium") {
+      margin-top: 15vh;
+    }
   }
 
   & h1 {
@@ -30,6 +40,10 @@
 
   & h2 {
     font-size: 2rem;
+
+    @include maxq("medium") {
+      font-size: 1.5rem;
+    }
   }
 
   .main__vac-brief {
@@ -38,5 +52,11 @@
     @include maxq("medium") {
       display: block;
     }
+  }
+}
+
+@media screen and (max-height: 36em) {
+  #showcase p.lead {
+    display: none;
   }
 }
