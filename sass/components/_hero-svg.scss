@@ -1,0 +1,30 @@
+.hero-svg {
+  width: 99%;
+  max-width: 50rem;
+  margin: 4px auto;
+}
+
+.hero-svg .svg-main text {
+  font-size: 200%;
+  text-anchor: middle;
+  fill: #fff;
+  transition: transform 250ms linear;
+  transform-origin: center;
+}
+
+.hero-svg .svg-main:hover text {
+  transform: scale(1.2);
+}
+
+.hero-svg .svg-main ellipse {
+  fill: none;
+  stroke: #fff;
+  transition: transform 250ms linear;
+  transform-origin: center;
+}
+
+.hero-svg .svg-main:hover ellipse {
+  transform: scale(0.95);
+  fill: #333;
+  opacity: 0.4;
+}
