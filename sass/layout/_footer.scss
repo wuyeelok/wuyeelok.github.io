@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+.footer {
+  &-bottom {
+    background: clr("neutral", 700);
+    padding: size(16);
+  }
+}
