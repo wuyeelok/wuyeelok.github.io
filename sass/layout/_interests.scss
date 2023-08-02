@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+/* Interests section */
+#interests {
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
+
+  & ul {
+    text-align: initial;
+    padding-inline-start: size(36);
+  }
+
+  & p {
+    text-align: center;
+    @include mq("small") {
+      text-align: initial;
+    }
+  }
+}
