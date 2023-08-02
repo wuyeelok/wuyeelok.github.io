@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.project {
+  &-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: 2em;
+    transform: scale(0.85);
+    transform-origin: center;
+    transition: transform 250ms ease-in-out;
+
+    &:is(:hover, :focus) {
+      transform: scale(1);
+    }
+  }
+
+  &-details {
+    color: clr("neutral", 700);
+  }
+
+  &-container {
+    display: grid;
+    gap: 1em;
+
+    @include mq(small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
