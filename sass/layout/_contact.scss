@@ -1,0 +1,7 @@
+#contact {
+  text-align: center;
+
+  & .qr-img {
+    width: clamp(13rem, 25vh, 19rem);
+  }
+}
