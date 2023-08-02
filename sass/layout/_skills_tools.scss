@@ -1,4 +1,55 @@
+@use "../abstracts" as *;
+
 /* Skills & Tools */
 #skills_tools {
   background: url(../img/dark_sky_with_star.jpg) no-repeat bottom/cover;
+  text-align: center;
+}
+
+.skills-tools-cols {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  text-align: left;
+  font-size: 0.8rem;
+
+  @include mq("small") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("large") {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: fs(300);
+  }
+
+  & .skill_icon {
+    @include mq("small") {
+      display: none;
+    }
+  }
+
+  & ul {
+    list-style: none;
+
+    & li {
+      display: none;
+
+      @include mq("small") {
+        display: block;
+      }
+    }
+
+    &.chosen li {
+      display: block;
+    }
+
+    & li:first-child {
+      display: block;
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: #444 solid 1px;
+      margin-bottom: 1rem;
+    }
+  }
 }
