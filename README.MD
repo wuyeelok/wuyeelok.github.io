@@ -34,6 +34,18 @@ Install [nodejs](https://nodejs.org/) on your computer.
 
 #### How To Deploy
 
+##### If Working on Branch
+
+1. Push all your changes to Github branch by running `git push origin <branch_name>`
+2. **Create pull request** in Github and **Merge pull request** to add changes into **master branch**
+3. (_House keep_) Delete branch _<branch_name>_ in Github
+4. (_House keep_) Open _terminal_
+5. (_House keep_) In terminal, `cd ....` to _root directory_
+6. (_House keep_) Remove local branch tracking to Github deleted branch by `git fetch origin --prune`
+7. (_House keep_) Remove the no use local branch _<branch_name>_ by `git checkout master` and run `git branch -D <branch_name>`
+
+##### If Working Directly on master Branch
+
 1. Open _terminal_
 2. In terminal, `cd ....` to _root directory_
 3. Run `npm run build`
