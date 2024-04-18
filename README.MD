@@ -1,6 +1,14 @@
-# Beyond CSS Website Starter Template
+# Kenneth's Personal Site
 
-This static website template is based on **Kelvin POWELL** [Beyond CSS course](https://www.beyondcss.dev/).
+- [Kenneth's Personal Site](#kenneths-personal-site)
+  - [How To Use](#how-to-use)
+    - [For Local Development](#for-local-development)
+    - [For Production Deployment In GitHub Pages](#for-production-deployment-in-github-pages)
+      - [One Time Setup In GitHub](#one-time-setup-in-github)
+      - [One Time Setup For Vite Base](#one-time-setup-for-vite-base)
+      - [How To Deploy](#how-to-deploy)
+        - [If Working on Branch](#if-working-on-branch)
+        - [If Working Directly on master Branch](#if-working-directly-on-master-branch)
 
 It uses [vite](https://vitejs.dev/) with [purgecss](https://github.com/Mexican-Man/vite-plugin-html-purgecss/), [scss](https://sass-lang.com/) and [PostCSS Preset Env](https://www.npmjs.com/package/postcss-preset-env)
 
@@ -55,3 +63,5 @@ Install [nodejs](https://nodejs.org/) on your computer.
 7. _(if you have changed file)_ Run `git add .`
 8. _(if you have changed file)_ Run `git commit -m "....."`
 9. _(if you have changed file)_ Run `git push origin master`
+
+[Back to top](#kenneths-personal-site)
